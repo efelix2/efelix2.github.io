@@ -213,9 +213,11 @@
         </div>
     </a>
 
+    <!-- d-flex justify-content-between -->
+
     <!--MAIN-------->
     <main style="opacity: 1;" class="page-content">
-        <div data-animation="default" class="d-flex justify-content-between" data-easing2="ease-out-sine" data-easing="ease-out-sine" data-collapse="medium" style="transform: translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" data-w-id="5e9d5bd3-28a6-0a51-e9d4-28055b0e8916" role="banner" data-duration="700"><a href="/" aria-current="page" class="brand w-nav-brand w--current" aria-label="home"></a>
+        <div data-animation="default" id="navbar" class="navigation w-nav" data-easing2="ease-out-sine" data-easing="ease-out-sine" data-collapse="medium" style="transform: translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" data-w-id="5e9d5bd3-28a6-0a51-e9d4-28055b0e8916" role="banner" data-duration="700"><a href="/" aria-current="page" class="brand w-nav-brand w--current" aria-label="home"></a>
             <div class="nav-link">
                 <div style="height: 0%; width: 1px;"></div><a href="/" aria-current="page" onclick="location.reload('true')" class="navtext w--current">Home</a>
                 <div class="white-block"></div>
@@ -565,13 +567,12 @@
             $("#phone").mask("999-999-9999", {
                 placeholder: ""
             });
-        });
-    </script>
-    <!--///SCRIPTS DO SISTEMA///-->
 
-    <!--///SCRIPTS DO SISTEMA///-->
-    <script>
-        $(document).ready(function() {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                $('#navbar').removeClass()
+
+            }
+     
             $("#phone-num").mask("999-999-9999", {
                 placeholder: ""
             });

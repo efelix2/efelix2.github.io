@@ -1,4 +1,4 @@
-a:active, a:hover {
+a:active, a:hover:not([href="mailto:development@fernandesproservice.co"]) {
     outline: 0;
     text-decoration: none;
     color: #000;

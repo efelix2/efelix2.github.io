@@ -16,6 +16,8 @@
   
  <a href="teste.html"><button> TESTE2</button></a>
 
+  <?= oire?>
+  
   <table>
     <thead>
     <tr>
